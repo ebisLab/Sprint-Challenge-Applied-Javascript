@@ -64,7 +64,7 @@ class TabCard {
   constructor(cardElement){
     // Assign this.cardElement to the cardElement DOM reference
     this.cardElement = cardElement;
-    console.log(this.cards, this.cardElement)
+    console.log('Sample')
   }
   selectCard(){
     // Update the style of this.cardElement to display = "flex"
@@ -88,3 +88,13 @@ let tabs = document.querySelectorAll('.tab')
 tabs.forEach(link => {
  new TabLink(link)
 })
+
+
+//Header Date
+let date = document.querySelector('.date');
+let d = new Date();
+let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+let m = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+date.innerHTML = `${days[d.getDay()]} ${m[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`;
+
+// 
