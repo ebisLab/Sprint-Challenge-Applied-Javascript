@@ -93,8 +93,8 @@ tabs.forEach(link => {
 //Header Date
 let date = document.querySelector('.date');
 let d = new Date();
-let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-let m = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"].map(item=> item.toUpperCase());
+let m = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"].map(item=> item.toUpperCase());
 date.innerHTML = `${days[d.getDay()]} ${m[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`;
 
 // 
