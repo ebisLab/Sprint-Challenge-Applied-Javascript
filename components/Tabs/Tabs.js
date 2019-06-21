@@ -63,12 +63,12 @@ class TabCard {
   
   constructor(cardElement){
     // Assign this.cardElement to the cardElement DOM reference
-    // this.cardElement;
-    
+    this.cardElement = cardElement;
+    console.log(this.cards, this.cardElement)
   }
   selectCard(){
     // Update the style of this.cardElement to display = "flex"
-    // this.cardElement;
+    this.cardElement.style.display='flex';
     console.log('123 Suprise MF*KA!!')
   }
 
